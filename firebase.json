@@ -10,31 +10,31 @@
     ],
     "rewrites": [
       {
-        "source": "/Politics",
+        "source": "/politics",
         "destination": "/topic.html"
       },
       {
-        "source": "/Sports",
+        "source": "/sports",
         "destination": "/topic.html"
       },
       {
-        "source": "/Technology",
+        "source": "/technology",
         "destination": "/topic.html"
       },
       {
-        "source": "/Entertainment",
+        "source": "/entertainment",
         "destination": "/topic.html"
       },
       {
-        "source": "/Economy",
+        "source": "/economy",
         "destination": "/topic.html"
       },
       {
-        "source": "/Life",
+        "source": "/life",
         "destination": "/topic.html"
       },
       {
-        "source": "/World",
+        "source": "/world",
         "destination": "/topic.html"
       },
       {
