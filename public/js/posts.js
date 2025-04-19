@@ -40,7 +40,7 @@ async function posts_name() {
 
     const htmlContent = `
       <div class="posts-title">
-        <small class="topic-title">${replaceDashWithSpace(capitalizeAllLetter(post.topic))}</small>
+        <small class="topic-title">${capitalizeAllLetter(post.topic)}</small>
         <small>Published: ${new Date(post.timestamp).toLocaleDateString()}</small>
       </div>
       <h1>${capitalizeFirstLetter(textOutput(post.name))}</h1>
@@ -128,8 +128,6 @@ async function list() {
 }
 
 async function load_more_topic() {
-  const topics = ['Politics', 'Sports', 'Technology', 'Entertainment', 'Economy', 'Life', 'World'];
-
   let putArray = topics.filter(key => key !== get_topic);
   let newsList = await fetchNewsPosts(putArray);
 
@@ -175,7 +173,7 @@ function put_topic(newsList) {
           <a href="/${article.id}" class="topic-list-item">
             <div class="topic-list-img skeleton-active">
               <img src="${article.summary}" alt="${article.name}" onload="removeSkeleton(this)" onerror="handleImageError(this)" />
-              <h5>${replaceDashWithSpace(capitalizeAllLetter(article.topic))}</h5>
+              <h5>${capitalizeAllLetter(article.topic)}</h5>
             </div>
             <div class="topic-list-text">
               <h4>${capitalizeFirstLetter(textOutput(article.name))}</h4>
@@ -193,7 +191,7 @@ function put_topic(newsList) {
           <a href="/${article.id}" class="topic-list-item">
             <div class="topic-list-img skeleton-active">
               <img src="${article.summary}" alt="${article.name}" onload="removeSkeleton(this)" onerror="handleImageError(this)" />
-              <h5>${replaceDashWithSpace(capitalizeAllLetter(article.topic))}</h5>
+              <h5>${rcapitalizeAllLetter(article.topic)}</h5>
             </div>
             <div class="topic-list-text">
               <h4>${capitalizeFirstLetter(textOutput(article.name))}</h4>

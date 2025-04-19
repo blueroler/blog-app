@@ -183,7 +183,7 @@ header.innerHTML = `
 document.body.appendChild(header);
 
 document.addEventListener("DOMContentLoaded", () => {
-  load_dropdown(['Politics', 'Sports', 'Technology', 'Entertainment', 'Economy', 'Life', 'World']);
+  load_dropdown();
   const toggle = document.getElementById("menuToggle");
   const nav = document.getElementById("mainNav");
   toggle.addEventListener("click", () => {
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let topicsBackup = "";
 
-function load_dropdown(topics) {
+function load_dropdown() {
   const drop = document.getElementById('mainNav');
   if (drop) {
     drop.innerHTML = '';

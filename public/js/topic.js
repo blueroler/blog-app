@@ -14,7 +14,7 @@ function show_topic() {
   topic_page.innerHTML = `
     <div class="section-title">
         <div class="cover-title">
-          <h2>${replaceDashWithSpace(capitalizeAllLetter(get_topic))}</h2>
+          <h2>${capitalizeAllLetter(get_topic)}</h2>
           <div class="cover-left-title"></div>
         </div>
     </div>

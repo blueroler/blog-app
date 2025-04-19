@@ -1,7 +1,6 @@
 load_hots_section();
 
 async function load_hots_section() {
-  const topics = ['Politics', 'Sports', 'Technology', 'Entertainment', 'Economy', 'Life', 'World'];
   const allTopicData = await fetchAllTopicsData(topics);
 
   const breakingList = allTopicData

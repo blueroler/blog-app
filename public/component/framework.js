@@ -1,4 +1,5 @@
 const databaseUrl = 'https://website-blueroler-default-rtdb.firebaseio.com';
+const topics = ['politics', 'sports', 'technology', 'entertainment', 'economy', 'life', 'world'];
 
 function textOutput(input) {
     const div = document.createElement('div');
@@ -12,8 +13,4 @@ function capitalizeFirstLetter(input) {
 
 function capitalizeAllLetter(input) {
     return input.toUpperCase();
-}
-
-function replaceDashWithSpace(input) {
-    return input.replace(/-/g, " ");
 }
